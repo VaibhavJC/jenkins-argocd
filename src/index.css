@@ -8,3 +8,7 @@
 body{
   background-color: rgb(1, 7, 22);
 }
+
+video{
+  visibility: visible;
+}
