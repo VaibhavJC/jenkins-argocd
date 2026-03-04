@@ -1,20 +1,54 @@
-/* Remove default spacing */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* ================= LAYOUT ================= */
+
+.aaa{
+  display: flex;
+  position: relative;
 }
 
-/* Full Screen Container */
-.hero-container {
+.rel{
+  position: relative;
+}
+
+.nnn{
+  width: 100%;
+  position: fixed;
+  top: 90vh;
+  z-index: 10;
+  display: none;
+}
+
+.first{
+  width: 7%;
+  position: fixed;
+}
+
+.second{
+  width: 90%;
+  margin-left: 140px;
+  position: relative;
+}
+
+.stick{
+  position: sticky;
+  top: 0;
+}
+
+.z{
+  position: relative;
+  background-color: rgb(1, 7, 22);
+  margin-top: 20px;
+}
+
+/* ================= HERO SECTION ================= */
+
+.hero-container{
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   overflow: hidden;
 }
 
-/* Background Video */
-.hero-video {
+.hero-video{
   position: absolute;
   top: 0;
   left: 0;
@@ -23,55 +57,107 @@
   object-fit: cover;
 }
 
-/* Dark Overlay (Optional but recommended) */
-.hero-container::after {
+/* Dark overlay */
+.hero-container::after{
   content: "";
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0,0,0,0.6);
   top: 0;
   left: 0;
 }
 
-/* Content Section */
-.hero-content {
+.hero-content{
   position: relative;
   z-index: 2;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding-left: 40px;
+  padding-top: 8%;
+  max-width: 500px;
   color: white;
-  text-align: center;
-  padding: 20px;
 }
 
-/* Heading */
-.hero-content h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
+.hero-content h3{
+  margin-top: 15px;
 }
 
-/* Paragraph */
-.hero-content p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
+.hero-content span{
+  background-color: rgba(195, 195, 195, 0.523);
+  padding: 3px 6px;
+  border-radius: 3px;
 }
 
-/* Button */
-.hero-button {
-  padding: 12px 30px;
+.hero-content p{
+  width: 400px;
   font-size: 1rem;
-  border: none;
-  background-color: #e50914;
+  line-height: 22px;
+  margin-top: 25px;
+}
+
+/* Buttons */
+
+.hero-content .btn{
+  width: 300px;
+  height: 45px;
+  background-color: rgba(220, 220, 220, 0.37);
+  border: 1px solid rgba(128, 128, 128, 0.581);
+  border-radius: 10px;
   color: white;
+  font-size: 1.2rem;
+  margin-top: 35px;
   cursor: pointer;
-  border-radius: 4px;
+}
+
+.hero-content .bb{
+  width: 50px;
+  margin-left: 10px;
+}
+
+.hero-content .btn:hover{
+  transform: scale(1.04);
   transition: 0.3s ease;
 }
 
-.hero-button:hover {
-  background-color: #f6121d;
+/* ================= RESPONSIVE ================= */
+
+@media (max-width:600px) {
+
+  .first{
+    display: none;
+  }
+
+  .second{
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .hero-content{
+    padding-left: 20px;
+    padding-top: 15%;
+    max-width: 90%;
+  }
+
+  .hero-content .btn{
+    width: 150px;
+    height: 30px;
+    font-size: 1rem;
+    margin-top: 15px;
+  }
+
+  .hero-content .bb{
+    width: 30px;
+  }
+
+  .hero-content p{
+    display: none;
+  }
+
+  .hero-content h3{
+    font-size: 15px;
+  }
+
+  .nnn{
+    display: block;
+  }
 }
