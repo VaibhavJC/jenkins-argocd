@@ -41,6 +41,10 @@
 
 /* ================= HERO SECTION ================= */
 
+video {
+  visibility: visible;
+}
+
 .hero-container{
   position: relative;
   width: 100%;
