@@ -29,6 +29,7 @@ function App() {
 
             <video
               className="hero-video"
+              autoplay
               loop
               controls
               playsInline
