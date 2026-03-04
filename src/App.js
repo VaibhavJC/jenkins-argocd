@@ -29,11 +29,11 @@ function App() {
 
             <video
               className="hero-video"
-              autoPlay
               loop
-              muted
+              controls
+              playsInline
             >
-              <source src="/video.mp4" type="video/mp4" />
+              <source src="/video_2026-03-03_15-42-28.mp4" type="video/mp4" />
             </video>
 
             {/* Overlay Content */}
