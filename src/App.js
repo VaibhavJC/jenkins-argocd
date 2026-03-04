@@ -8,8 +8,6 @@ import Platforms from './components/Platforms';
 import Row from './components/Row';
 import requests from './request';
 
-import myVideo from './components/video_2026-03-03_15-42-28.mp4';
-
 function App() {
   return (
     <div className='rel'>
@@ -35,7 +33,7 @@ function App() {
               loop
               muted
             >
-              <source src={myVideo} type="video/mp4" />
+              <source src="/video.mp4" type="video/mp4" />
             </video>
 
             {/* Overlay Content */}
