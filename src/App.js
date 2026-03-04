@@ -34,7 +34,7 @@ function App() {
               controls
               playsInline
             >
-              <source src="/Veera The Boss.mp4" type="video/mp4" />
+              <source src="/Video-Project.mp4" type="video/mp4" />
             </video>
 
             {/* Overlay Content */}
