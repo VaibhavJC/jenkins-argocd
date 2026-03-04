@@ -41,11 +41,11 @@ function App() {
             <div className='hero-content'>
 
               <h3>
-                2023 · 2h 54m · 4 languages · <span>U/A 16+</span>
+                2026 · 2h 54m · 4 languages · <span>U/A 16+</span>
               </h3>
 
               <p>
-                In a crime-infested town, Kannan bhai and his gang are the reigning powers.
+                In a world of failing deployments and crashing systems, one DevOps mentor stands between chaos and control.
               </p>
 
               <h3>Action | Drama | Thriller | Crime</h3>
